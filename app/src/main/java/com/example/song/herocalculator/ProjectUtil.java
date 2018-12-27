@@ -140,6 +140,11 @@ class Item {
         return "名称: " + name + "\n\n属性:\n"+printBuff()+"\n描述: \n" + description + "\n" ;
     }
 
+    public String printForBrowse() {
+        return "属性:\n"+printBuff()+"\n描述: \n" + description + "\n" ;
+    }
+
+
     public void add(Item item) {
         buff.add(item.buff);
     }

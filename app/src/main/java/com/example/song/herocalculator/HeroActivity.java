@@ -125,7 +125,10 @@ public class HeroActivity extends AppCompatActivity {
             textView.setMovementMethod(ScrollingMovementMethod.getInstance());
             ItemFactory itemFactory = new ItemFactory(getActivity());
             Item item = itemFactory.getItemByKeyword(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)-1));
-            textView.setText(item.print());
+            textView.setText(item.printForBrowse());
+
+            TextView nameTextView = (TextView) rootView.findViewById(R.id.nameTextView);
+            nameTextView.setText(item.name);
             return rootView;
         }
     }
