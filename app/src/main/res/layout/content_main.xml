@@ -17,14 +17,14 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:contentDescription="TODO"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/item5ImageBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/item3ImageBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:srcCompat="@drawable/test_item"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/add" />
 
     <ImageButton
         android:id="@+id/item5ImageBtn"
@@ -35,14 +35,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:contentDescription="TODO"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/item4ImageBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:srcCompat="@drawable/test_item"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/add" />
 
     <ImageButton
         android:id="@+id/item1ImageBtn"
@@ -53,14 +53,14 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:contentDescription="TODO"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/item2ImageBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/heroImageBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:srcCompat="@drawable/test_item"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/add" />
 
     <ImageButton
         android:id="@+id/item3ImageBtn"
@@ -71,14 +71,14 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:contentDescription="TODO"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/item4ImageBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/item2ImageBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:srcCompat="@drawable/test_item"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/add" />
 
     <ImageButton
         android:id="@+id/item2ImageBtn"
@@ -95,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/item1ImageBtn"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:srcCompat="@drawable/test_item" />
+        app:srcCompat="@drawable/add" />
 
     <EditText
         android:id="@+id/searchEditText"
@@ -126,7 +126,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:srcCompat="@drawable/test_hero" />
+        app:srcCompat="@drawable/add" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
