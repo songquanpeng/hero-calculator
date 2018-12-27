@@ -23,14 +23,17 @@
         <activity
             android:name=".AboutActivity"
             android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HeroActivity"
             android:label="@string/title_activity_hero"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ItemActivity"
             android:label="@string/title_activity_item"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
