@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main"
+            android:icon="@drawable/main"
+            android:title="@string/main" />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/browse_hero_info"
+            android:icon="@drawable/hero"
+            android:title="@string/browse_hero_info" />
+        <item
+            android:id="@+id/browse_item_info"
+            android:icon="@drawable/sword"
+            android:title="@string/browse_item_info" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="@string/about" />
+    </group>
+</menu>
