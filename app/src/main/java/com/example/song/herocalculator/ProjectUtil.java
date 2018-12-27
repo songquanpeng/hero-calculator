@@ -136,7 +136,7 @@ class Item {
     }
 
     public String print() {
-        return "名称: " + name + "\n描述: \n" + description + "\n" + printBuff();
+        return "名称: " + name + "\n\n属性:\n"+printBuff()+"\n描述: \n" + description + "\n" ;
     }
 
     public void add(Item item) {
