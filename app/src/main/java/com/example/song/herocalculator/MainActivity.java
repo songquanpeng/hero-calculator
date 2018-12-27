@@ -90,13 +90,31 @@ public class MainActivity extends AppCompatActivity
 
         Item SumItem = new Item();
         String SumDescription = "";
+//        for(int i=0;i<6;i++){
+//            if(state[i]){
+//                SumItem.add(items[i]);
+//                SumDescription+=items[i].print();
+//            }
+//        }
+
+        boolean first = false;
         for(int i=0;i<6;i++){
             if(state[i]){
-                SumItem.add(items[i]);
-                SumDescription+=items[i].print();
+                if(!first){
+                    first = true;
+                    SumItem = items[i];
+                }else {
+                    SumItem.add(items[i]);
+                    SumDescription+=items[i].print();
+                }
+
             }
         }
-        descriptionTextView.setText(SumItem.print()+"\n\n"+SumDescription);
+        if(first){
+            descriptionTextView.setText(SumItem.print()+"\n\n"+SumDescription);
+        }else {
+            descriptionTextView.setText("");
+        }
     }
 
 
