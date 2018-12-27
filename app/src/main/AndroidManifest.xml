@@ -25,10 +25,6 @@
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SearchActivity"
-            android:label="@string/title_activity_search"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".HeroActivity"
             android:label="@string/title_activity_hero"
             android:theme="@style/AppTheme.NoActionBar" />

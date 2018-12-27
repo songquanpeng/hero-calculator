@@ -10,7 +10,7 @@
     <string name="browse_hero_info">Browse Hero</string>
     <string name="browse_item_info">Browse Item</string>
     <string name="search">Search</string>
-    <string name="main">Main</string>
+    <string name="main">Home</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_hero">HeroActivity</string>

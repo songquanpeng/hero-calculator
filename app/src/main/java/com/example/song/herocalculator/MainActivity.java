@@ -78,10 +78,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.main) {
             // Handle the camera action
-        } else if (id == R.id.search) {
-            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.browse_hero_info) {
+        }  else if (id == R.id.browse_hero_info) {
             Intent intent = new Intent(MainActivity.this, HeroActivity.class);
             startActivity(intent);
         } else if (id == R.id.browse_item_info) {
