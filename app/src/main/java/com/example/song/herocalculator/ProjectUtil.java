@@ -87,6 +87,7 @@ class ItemFactory {
             cursor.close();
         } else {
             Log.w("NOTICE", "查无此项");
+            item.id = -1;
         }
         return item;
     }
