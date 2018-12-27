@@ -10,12 +10,14 @@
     <string name="browse_hero_info">Browse Hero</string>
     <string name="browse_item_info">Browse Item</string>
     <string name="search">Search</string>
-    <string name="main">Home</string>
-    <string name="title_activity_about">AboutActivity</string>
+    <string name="main">Main</string>
+    <string name="title_activity_about">Help and About us</string>
     <string name="title_activity_search">SearchActivity</string>
-    <string name="title_activity_hero">HeroActivity</string>
-    <string name="title_activity_item">ItemActivity</string>
+    <string name="title_activity_hero">Browse Hero</string>
+    <string name="title_activity_item">Browse Item</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="test_word">测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。测试文字。</string>
     <string name="search_hint">请输入英雄或物品名字</string>
+    <string name="aboutContent">使用方法：\t点击左上角选择相应的功能。\n\nMain：\t主界面，可以查找英雄，指定装备并计算当前属性值。\n\nBrowse Hero：\t英雄浏览界面，可以左右划动屏幕来浏览。\n\nBrowse Item：\t装备浏览界面，可以左右划动屏幕来浏览。\n\nAbout：\t获取帮助信息，以及我们的联系方式\n\n作者：\t宋全鹏，孙铭泽，何特，李江伟，罗宇杰\n\n联系邮箱：\tsongwonderful@outlook.com</string>
+    <string name="aboutContentTitle">欢迎使用王者荣耀英雄计算器!</string>
 </resources>
