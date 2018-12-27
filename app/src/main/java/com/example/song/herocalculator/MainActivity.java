@@ -11,9 +11,16 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+
+    TextView descriptionTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +38,48 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        ItemFactory itemFactory = new ItemFactory(this);
-        Item item = itemFactory.getItemByKeyword("23");
-        Log.d("debug1", item.description);
+//        ItemFactory itemFactory = new ItemFactory(this);
+//        Item item = itemFactory.getItemByKeyword("23");
+//        Log.d("debug1", item.description);
+
+        ImageButton searchButton = (ImageButton) findViewById(R.id.searchBtn);
+
+
+        final ImageButton heroImageButton = (ImageButton) findViewById(R.id.heroImageBtn);
+        final ImageButton item1Button = (ImageButton) findViewById(R.id.item1ImageBtn);
+        final ImageButton item2Button = (ImageButton) findViewById(R.id.item2ImageBtn);
+        final ImageButton item3Button = (ImageButton) findViewById(R.id.item3ImageBtn);
+        final ImageButton item4Button = (ImageButton) findViewById(R.id.item4ImageBtn);
+        final ImageButton item5Button = (ImageButton) findViewById(R.id.item5ImageBtn);
+        descriptionTextView = (TextView) findViewById(R.id.descriptionTextView);
+        final EditText searchEditText = (EditText) findViewById(R.id.searchEditText);
+        final ItemFactory itemFactory = new ItemFactory(this);
+
+        heroImageButton.setBackgroundColor(5);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            Item textViewItem = new Item();
+            @Override
+            public void onClick(View view) {
+                String text = searchEditText.getText().toString();
+                textViewItem = itemFactory.getItemByKeyword(text);
+                descriptionTextView.setText(
+                        "英雄名字：" + textViewItem.name + "\n"
+                                + "AD:" + textViewItem.buff.buff[0] + "\n"
+                                + "AP:" + textViewItem.buff.buff[1] + "\n"
+                                + "ADD:" + textViewItem.buff.buff[2] + "\n"
+                                + "APD:" + textViewItem.buff.buff[3] + "\n"
+                                + "MANA:" + textViewItem.buff.buff[4] + "\n"
+                                + "BLOOD:" + textViewItem.buff.buff[5] + "\n"
+                                + "PRICE:" + textViewItem.buff.buff[6] + "\n"
+                                + "DECRIPTION:" + textViewItem.description + "\n"
+                                + "ddddddd"
+                );
+
+
+            }
+        });
+
+
     }
 
     @Override
@@ -78,7 +124,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.main) {
             // Handle the camera action
-        }  else if (id == R.id.browse_hero_info) {
+        } else if (id == R.id.browse_hero_info) {
             Intent intent = new Intent(MainActivity.this, HeroActivity.class);
             startActivity(intent);
         } else if (id == R.id.browse_item_info) {
